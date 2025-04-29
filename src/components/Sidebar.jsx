@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
-import { Home, CheckSquare, FolderOpen, Settings, User } from 'lucide-react'
+import { Home, CheckSquare, FolderOpen, Settings, User, Clock } from 'lucide-react'
 
 function Sidebar() {
   const navItems = [
     { path: '/', label: 'Dashboard', icon: <Home size={20} /> },
     { path: '/tasks', label: 'Tasks', icon: <CheckSquare size={20} /> },
+    { path: '/tasks/pending', label: 'Pending Tasks', icon: <Clock size={20} /> },
     { path: '/projects', label: 'Projects', icon: <FolderOpen size={20} /> },
     { path: '/profile', label: 'Profile', icon: <User size={20} /> },
   ]

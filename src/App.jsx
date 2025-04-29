@@ -13,6 +13,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
 import TaskList from './pages/TaskList'
+import PendingTasks from './pages/PendingTasks'
 import TaskDetail from './pages/TaskDetail'
 import TaskForm from './pages/TaskForm'
 import ProjectList from './pages/ProjectList'
@@ -42,6 +43,7 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path="tasks">
           <Route index element={<TaskList />} />
+          <Route path="pending" element={<PendingTasks />} />
           <Route path=":id" element={<TaskDetail />} />
           <Route path="new" element={<TaskForm />} />
           <Route path="edit/:id" element={<TaskForm />} />
